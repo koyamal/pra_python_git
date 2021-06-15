@@ -1,20 +1,19 @@
 a, b, x = map(int, input().split())
 
-max = b - (b % x)
+#max = b - (b % x)
+max = b // x
 
 if a % x == 0:
-    min = a
+    min_ = a
 else:
-    min = a + x - (a % x)
+    min_ = a + x - (a % x)
+
+min = min_ // x
 
 if max <= min:
     print(0)
 else:
-    print(1 + int(max/x - min/x))
+    print(1 + max - min)
 
-
-#print(min, max/x)
-#print(int(max/x))
-#print(max)
 
 
