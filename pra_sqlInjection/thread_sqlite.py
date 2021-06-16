@@ -22,7 +22,8 @@ def exec(sql, *args):
     db.commit()
     return c.lastrowid
 
-
+# 入力フォームから文字列を受け取り、SQLのリクエストに加える
+# 脆弱な記載をしているため、SQLインジェクションの被害を受ける
 def select_injection(injection):
     db = open_db()
     c = db.cursor()
