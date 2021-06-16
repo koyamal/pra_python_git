@@ -1,5 +1,6 @@
 from thread_sqlite import exec
 
+# テーブルの作成
 exec('''
 CREATE TABLE test(
     user_id     INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -7,7 +8,7 @@ CREATE TABLE test(
     )
 ''')
 
-
+# レコードの作成
 exec('''INSERT INTO test (user_name) VALUES (?)''', 'Taro')
 exec('''INSERT INTO test (user_name) VALUES (?)''', 'Jiro')
 exec('''INSERT INTO test (user_name) VALUES (?)''', 'Saburo')
