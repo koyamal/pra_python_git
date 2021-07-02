@@ -2,13 +2,13 @@ N = int(input())
 listA = []
 indexShinedLight = [1]
 for i in range(N):
-    listA.append(int(input()))
+    listA.append(input())
 
 shineSecond = True
 
 tempIndex = 1
 while shineSecond:
-    tempIndex = listA[tempIndex - 1]
+    tempIndex = int(listA[tempIndex - 1])
     if tempIndex in indexShinedLight:
         shineSecond = False
         print(-1)
