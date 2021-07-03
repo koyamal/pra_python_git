@@ -2,22 +2,17 @@ N = int(input())
 listA = []
 indexShinedLight = [1]
 for i in range(N):
-    listA.append(input())
-
-shineSecond = True
+    listA.append(int(input()))
 
 tempIndex = 1
-while shineSecond:
-    tempIndex = int(listA[tempIndex - 1])
-    if tempIndex in indexShinedLight:
-        shineSecond = False
-        print(-1)
-        exit()
-
+count = 0
+while count < N:
     if tempIndex == 2:
-        shineSecond = False
-        print(len(indexShinedLight))
+        print(count)
         exit()
+    else:
+        tempIndex = listA[tempIndex - 1]
+        count += 1
 
-    indexShinedLight.append(tempIndex)
+print(-1)
 
