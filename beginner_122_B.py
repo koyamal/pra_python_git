@@ -10,5 +10,7 @@ for i in range(len(S)):
             if count >= maxLength:
                 maxLength = count
             break
+    if count >= maxLength:
+        maxLength = count
 
 print(maxLength)
