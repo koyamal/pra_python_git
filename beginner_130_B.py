@@ -9,3 +9,5 @@ for L in Ls:
         print(output)
         exit()
     output += 1
+
+print(output)
