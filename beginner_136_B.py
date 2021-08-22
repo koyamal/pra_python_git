@@ -1,7 +1,5 @@
 N = input()
 
-lengthN = len(N)
-
 output = 0
 
 for i in range(int(N)):
