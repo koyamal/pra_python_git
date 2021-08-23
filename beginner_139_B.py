@@ -1,5 +1,9 @@
 A, B = map(int, input().split())
 
+if B == 1:
+    print(0)
+    exit()
+
 quot = B // (A - 1)
 
 output = A
@@ -10,4 +14,5 @@ for i in range(quot):
         exit()
     output += A - 1
     count += 1
+
 print(count)
