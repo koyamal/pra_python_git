@@ -1,5 +1,6 @@
 sizeCard = 3
-listAs = [list(map(int, input().split())), list(map(int, input().split())), list(map(int, input().split()))]
+listAs = [list(map(int, input().split())) for i in range(sizeCard)]
+
 selectedNumber = [["*" for j in range(sizeCard)] for i in range(sizeCard)]
 N = int(input())
 
