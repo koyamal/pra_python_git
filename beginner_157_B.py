@@ -14,7 +14,7 @@ for _ in range(N):
                     flag = False
                     break
 
-if ['o', 'o', 'o'] in selectedNumber:
+if ["o" for i in range(sizeCard)] in selectedNumber:
     print("Yes")
     exit()
 
@@ -32,7 +32,7 @@ if count_A == sizeCard or count_B == sizeCard:
 for i in range(len(selectedNumber[0])):
     count = 0
     for j in range(len(selectedNumber)):
-        if selectedNumber[i][j] == "o":
+        if selectedNumber[j][i] == "o":
             count += 1
     if count == sizeCard:
         print("Yes")
