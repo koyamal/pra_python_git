@@ -9,3 +9,10 @@ if A // K < B // K:
     print("OK")
 else:
     print("NG")
+
+# for i in range(A, B + 1):
+#     if i % K == 0:
+#         print("OK")
+#         exit()
+#
+# print("NG")
