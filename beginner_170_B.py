@@ -1,6 +1,8 @@
-xs = list(input().split())
+X, Y = map(int, input().split())
 
-for i in range(len(xs)):
-    if xs[i] == "0":
-        print(i + 1)
+for i in range(0, X + 1):
+    if i * 4 + (X - i) * 2 == Y:
+        print("Yes")
         exit()
+
+print("No")
