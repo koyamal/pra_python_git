@@ -44,3 +44,18 @@ class ChainedHash:
         self.table[hash] = temp
         return True
 
+    def remove(self, key: Any) -> bool:
+        hash = self.hash_value(key)
+        pp = None
+        p = self.table[hash]
+
+        while p is not None:
+            if p.key == key:
+                if pp is None:
+                    self.table[hash] = p.next
+                else:
+                    pp.next = p.next
+                return True
+            pp = p
+            p = p.next
+        return False
