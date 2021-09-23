@@ -4,7 +4,7 @@ minP = 10 ** 9
 canBuy = False
 for _ in range(N):
     A, P, X = map(int, input().split())
-    if X - A > 0 and minP > P:
+    if X - A > 0 and minP >= P:
         minP = P
         canBuy = True
 
