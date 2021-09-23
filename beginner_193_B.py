@@ -1,12 +1,14 @@
-A, B = map(int, input().split())
+N = int(input())
 
-C = A + B
+minP = 10 ** 9
+canBuy = False
+for _ in range(N):
+    A, P, X = map(int, input().split())
+    if X - A > 0 and minP > P:
+        minP = P
+        canBuy = True
 
-if C >= 15 and B >= 8:
-    print("1")
-elif C >= 10 and B >= 3:
-    print("2")
-elif C >= 3:
-    print("3")
+if canBuy:
+    print(minP)
 else:
-    print("4")
+    print(-1)
