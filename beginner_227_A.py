@@ -7,7 +7,4 @@ for i in range(A, N + 1):
 for i in range(1, A):
     listP.append(i)
 
-if len(listP) < K:
-    print(listP[len(listP) - 1])
-else:
-    print(listP[K - 1])
+print(listP[K % N - 1])
