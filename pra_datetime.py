@@ -14,10 +14,20 @@ def pra_datetime():
     dt = datetime.datetime(1993, 11, 21)
     print("======= datetime(dt) =======")
     print(type(dt))
-    print("dt_now: ", dt)
+    print("dt: ", dt)
     print("year: ", dt.year)
     print("hour: ", dt.hour)
 
+def pra_date():
+    d_today = datetime.date.today()
+    print("======= date(d_today) =======")
+    print(d_today)
+    print(type(d_today))
+    print('d_today: ', d_today)
+    print("year: ", d_today.year)
+    print("month: ", d_today.month)
+    print("day: ", d_today.day)
 
 if __name__ == "__main__":
     pra_datetime()
+    pra_date()
