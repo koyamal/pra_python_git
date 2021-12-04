@@ -28,13 +28,13 @@ def pra_date():
     print("month: ", d_today.month)
     print("day: ", d_today.day)
 
-    d = datetime.date(1993, 11, 21)
-    print("======= date(d) =======")
-    print(type(d))
-    print('d: ', d)
-    print("year: ", d.year)
-    print("month: ", d.month)
-    print("day: ", d.day)
+    d_birth = datetime.date(1993, 11, 21)
+    print("======= date(d_birth) =======")
+    print(type(d_birth))
+    print('d_birth: ', d_birth)
+    print("year: ", d_birth.year)
+    print("month: ", d_birth.month)
+    print("day: ", d_birth.day)
 
 
 if __name__ == "__main__":
