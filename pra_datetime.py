@@ -28,6 +28,7 @@ def pra_date():
     print("month: ", d_today.month)
     print("day: ", d_today.day)
 
+
 if __name__ == "__main__":
     pra_datetime()
     pra_date()
