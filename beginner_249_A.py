@@ -5,10 +5,10 @@ remT = X % (A + C)
 numA = X // (D + F)
 remA = X % (D + F)
 
-disT = numT * B * A + B * remT
-#disT = numT * B * A + B * min(remT, A)
-disA = numA * E * D + E * remA
-#disA = numA * E * D + E * min(remA, D)
+#disT = numT * B * A + B * remT
+disT = numT * B * A + B * min(remT, A)
+#disA = numA * E * D + E * remA
+disA = numA * E * D + E * min(remA, D)
 
 if disT > disA:
     print("Takahashi")
