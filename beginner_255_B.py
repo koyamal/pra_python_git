@@ -6,11 +6,12 @@ for _ in range(N):
     XYs.append([X, Y])
 
 max = 0
-for i in range(N - 1):
+for i in range(K):
     min = 10 ** 10
-    for j in range(i+1, N):
-        if (XYs[i][0] - XYs[j][0]) ** 2 + (XYs[i][1] - XYs[j][1]) ** 2 < min:
-            min = (XYs[i][0] - XYs[j][0]) ** 2 + (XYs[i][1] - XYs[j][1]) ** 2
+    for j in range(N):
+        if(As[i] - 1 != j):
+            if (XYs[As[i] - 1][0] - XYs[j][0]) ** 2 + (XYs[As[i] - 1][1] - XYs[j][1]) ** 2 < min:
+                min = (XYs[As[i] - 1][0] - XYs[j][0]) ** 2 + (XYs[As[i] - 1][1] - XYs[j][1]) ** 2
     if min > max:
         max = min
 
