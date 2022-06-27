@@ -1,6 +1,5 @@
 N, X = map(int, input().split())
-
+box = ''
 for i in range(ord('A'), ord('Z') + 1):
-    if((i - ord('A') + 1) * N > X):
-        print(chr(i - 1))
-        exit()
+    box += chr(i) * N
+print(box[X - 1])
