@@ -1,5 +1,5 @@
-import numpy
-print("66".decode("hex"))
+import codecs
+output = ""
 with open('/Users/koki/Downloads/dump.out.log3') as f:
     for line in f:
         for i in range(int(len(line) / 2)):
@@ -7,8 +7,14 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                 if str(line[2 * i]) + str(line[2 * i + 1]) == "00":
                     pass
                 else:
-                    print(str(line[2 * i]) + str(line[2 * i + 1]))
-                    print(chr(int(str(line[2 * i]) + str(line[2 * i + 1]))))
-                    print(chr(hex(66)))
+                    data = str(codecs.decode(str(line[2 * i]) + str(line[2 * i + 1]), "hex"), 'utf-8')
+                    print(data)
+                    if output[len(output) - 1:] != data:
+                        output = output + data
+                    # print(str(line[2 * i]) + str(line[2 * i + 1]))
+                    # print(str(codecs.decode(str(line[2 * i]) + str(line[2 * i + 1]), "hex"), 'utf-8'))
+                    # print(chr(int(str(line[2 * i]) + str(line[2 * i + 1]))))
             except ValueError as e:
                 pass
+
+print(output)
