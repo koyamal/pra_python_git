@@ -13,5 +13,6 @@ for i in range(M - 2):
                 ss = set(UV[i] + UV[j] + UV[k])
                 if len(ss) == 3:
                     output += 1
+                    break
 
 print(output)
