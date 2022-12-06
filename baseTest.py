@@ -9,3 +9,4 @@ with open("test_new.jpg", "wb") as f:
     f.write(base64.b64decode(img_base64))
 
 print("Done")
+print("base64")
