@@ -1,5 +1,5 @@
 import base64
-
+print("Start!")
 with open("test.jpg", "rb") as f:
     img = f.read()
 
