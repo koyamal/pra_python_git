@@ -12,7 +12,8 @@ data = [1, 3, 4, 5, 6]
 
 for d in data:
     print(d)
-    
+    print("for point")
+
 print("4th point")
 
 print("Done")
