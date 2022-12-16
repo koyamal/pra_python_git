@@ -10,6 +10,8 @@ with open("test_new.jpg", "wb") as f:
 
 data = [1, 3, 4, 5, 6]
 
+print("before for roop")
+
 for d in data:
     print("before print d")
     print(d)
