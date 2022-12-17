@@ -5,8 +5,11 @@ with open("test.jpg", "rb") as f:
 print("Second point")
 img_base64 = base64.b64encode(img)
 print('Third point')
+
 with open("test_new.jpg", "wb") as f:
     f.write(base64.b64decode(img_base64))
+
+print('4th point')
 
 data = [1, 3, 4, 5, 6]
 
@@ -18,7 +21,7 @@ for d in data:
     print("for point")
 
 
-print("4th point")
+print("5th point")
 
 print("Done")
 print("base64")
