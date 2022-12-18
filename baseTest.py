@@ -17,7 +17,7 @@ print("before for roop")
 
 for d in data:
     print("before print d")
-    print(d)
+    print(d, "test")
     print("for point")
 
 
