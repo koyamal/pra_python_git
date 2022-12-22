@@ -13,6 +13,8 @@ print('4th point')
 
 data = [1, 3, 4, 5, 6, 7, 9, 11, 12, 15, 17, 18]
 
+dast = ["test", "pra", "Git"]
+
 print("before for roop")
 
 for d in data:
@@ -20,6 +22,10 @@ for d in data:
     print(d, "test")
     print("for point")
 
+output = ""
+for s in dast:
+    output += s
+print(s)
 
 print("5th point")
 
