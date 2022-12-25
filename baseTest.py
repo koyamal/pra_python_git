@@ -13,8 +13,10 @@ print('4th point')
 
 data = [1, 3, 4, 5, 6, 7, 9, 11, 12, 15, 17, 18]
 data2 = [1, 3, 4, 5, 6, 7, 9, 11, 12, 15, 17, 18,19, 20]
+data3 = [15, 17, 18,19, 20, 22, 23]
 
 dast = ["test", "pra", "Git"]
+dasts = ["sstest", "pra", "Git"]
 dasts= dast + ["test", "pra", "Git"]
 
 print("before for roop")
