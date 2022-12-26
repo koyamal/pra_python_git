@@ -10,3 +10,5 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                     print(data)
             except ValueError as e:
                 pass
+
+print("End")
