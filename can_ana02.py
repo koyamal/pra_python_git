@@ -1,5 +1,7 @@
 import codecs
 
+print("start")
+
 with open('/Users/koki/Downloads/dump.out.log3') as f:
     for line in f:
         for i in range(int(len(line) / 2)):
