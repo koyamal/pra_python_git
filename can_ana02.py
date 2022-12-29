@@ -8,6 +8,7 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
             try:
                 print("In try process")
                 strData = str(line[2 * i]) + str(line[2 * i + 1])
+                print("After Add Data")
                 if strData != '00':
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
