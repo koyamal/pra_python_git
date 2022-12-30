@@ -10,6 +10,9 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                 strData = str(line[2 * i]) + str(line[2 * i + 1])
                 print("After Add Data")
                 if strData != '00':
+                    d = [1, 2]
+                    a = [3, 4]
+                    t = [5, 6]
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
             except ValueError as e:
