@@ -17,6 +17,7 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
             except ValueError as e:
+                print("end")
                 pass
 
 print("End")
