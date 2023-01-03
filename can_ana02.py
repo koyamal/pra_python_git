@@ -13,6 +13,7 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                     d = [1, 2]
                     a = [3, 4]
                     t = [5, 6]
+                    t2 = [5, 6]
                     a = [7, 8]
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
