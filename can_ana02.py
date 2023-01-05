@@ -16,6 +16,7 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                     t2 = [5, 6]
                     a = [7, 8]
                     a2 = [7, 8]
+                    print("test code")
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
             except ValueError as e:
