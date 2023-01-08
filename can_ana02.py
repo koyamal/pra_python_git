@@ -20,6 +20,8 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                         print(tm)
                     for tm in t2:
                         print(tm)
+                    for tm in t:
+                        print(tm)
                     print("test code")
                     data = str(codecs.decode(strData, 'hex'), 'utf-8')
                     print(data)
