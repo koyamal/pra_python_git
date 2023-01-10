@@ -32,6 +32,9 @@ for d in data:
     print(d, "test")
     print("for point")
 
+for d in data3:
+    print(d)
+    
 output = ""
 for s in dast:
     output += s
