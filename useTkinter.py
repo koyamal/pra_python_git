@@ -1,5 +1,14 @@
 from tkinter import *
 from tkinter import ttk
+import datetime
+
+dt_now = datetime.datetime.now()
+
+dt_nowMonth = "0" + str(dt_now.month)
+dt_nowDay = "0" + str(dt_now.day)
+
+timeFrom = '{}-{}-{}T{}:{}:{}'.format(dt_now.year, dt_nowMonth[len(dt_nowMonth) - 2:], dt_nowDay[len(dt_nowDay) - 2:], "00", "00", "00")
+timeTo = '{}-{}-{}T{}:{}:{}'.format(dt_now.year, dt_nowMonth[len(dt_nowMonth) - 2:], dt_nowDay[len(dt_nowDay) - 2:], "23", "59", "59")
 
 def get_conf():
     com_mode = combo_mode.get()
@@ -26,11 +35,11 @@ label_car = ttk.Label(root, text="車両選択")
 combo_car = ttk.Combobox(root, state='readonly')
 combo_car["values"] = ("AA", "BB", "CC")
 
-tx_stime= StringVar(value="2023-01-10T00:00:00")
+tx_stime= StringVar(value=timeFrom)
 label_stime = ttk.Label(root, text="開始時刻")
 entry_stime = ttk.Entry(root, textvariable=tx_stime)
 
-tx_etime= StringVar(value="2023-01-10T23:00:00")
+tx_etime= StringVar(value=timeTo)
 label_etime = ttk.Label(root, text="終了時刻")
 entry_etime = ttk.Entry(root, textvariable=tx_etime)
 
