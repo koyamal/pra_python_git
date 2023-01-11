@@ -34,7 +34,7 @@ for d in data:
 
 for d in data3:
     print(d)
-    
+
 output = ""
 for s in dast:
     output += s
