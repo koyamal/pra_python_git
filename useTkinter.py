@@ -56,9 +56,6 @@ def make_gui():
     label_key = ttk.Label(root, text="API Key")
     entry_key = ttk.Entry(root, textvariable=tx_key)
 
-    tx1 = StringVar()
-    label = ttk.Label(root, text="Hello Python!")
-    entry = ttk.Entry(root, textvariable=tx1)
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key))
 
     combo = ttk.Combobox(root, state='readonly')
