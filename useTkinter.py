@@ -42,7 +42,7 @@ def make_gui():
     label_car = ttk.Label(root, text="車両選択")
     combo_car = ttk.Combobox(root, state='readonly')
     combo_car["values"] = ("AA", "BB", "CC")
-    combo_car.current(0)
+    combo_car.current(1)
 
     tx_stime = StringVar(value=timeFromTo[0])
     label_stime = ttk.Label(root, text="開始時刻")
