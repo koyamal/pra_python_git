@@ -27,6 +27,8 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key):
     print("etime: " + text_etime)
     print("key: " + text_key)
 
+    return [com_mode, com_car, text_stime, text_etime, text_key]
+
 def make_gui():
     timeFromTo = set_today()
     root = Tk()
