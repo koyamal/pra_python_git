@@ -55,6 +55,9 @@ def make_gui():
     tx_key = StringVar()
     label_key = ttk.Label(root, text="API Key")
     entry_key = ttk.Entry(root, textvariable=tx_key)
+    tx_key2 = StringVar()
+    label_key2 = ttk.Label(root, text="API Key")
+    entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key))
 
@@ -76,6 +79,8 @@ def make_gui():
     entry_key.grid(row=4, column=1)
 
     button.grid(row=5, column=0)
+    label_key.grid(row=6, column=0)
+    entry_key.grid(row=6, column=1)
 
     root.mainloop()
 
