@@ -79,8 +79,8 @@ def make_gui():
     entry_key.grid(row=4, column=1)
 
     button.grid(row=5, column=0)
-    label_key.grid(row=6, column=0)
-    entry_key.grid(row=6, column=1)
+    label_key2.grid(row=6, column=0)
+    entry_key2.grid(row=6, column=1)
 
     root.mainloop()
 
