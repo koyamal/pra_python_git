@@ -59,6 +59,11 @@ def make_gui():
     label_key2 = ttk.Label(root, text="API Key 02")
     entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
+    label_2 = ttk.Label(root, text="2")
+    combo_2 = ttk.Combobox(root, state='readonly')
+    combo_2["values"] = ("A2", "B2", "C2", "D2")
+    combo_2.current(1)
+
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key))
 
     combo = ttk.Combobox(root, state='readonly')
@@ -81,6 +86,8 @@ def make_gui():
     button.grid(row=5, column=0)
     label_key2.grid(row=6, column=0)
     entry_key2.grid(row=6, column=1)
+    label_2.grid(row=7, column=0)
+    combo_2.grid(row=7, column=1)
 
     root.mainloop()
 
