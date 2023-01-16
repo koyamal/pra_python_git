@@ -14,18 +14,20 @@ def set_today():
     return [timeFrom, timeTo]
 
 
-def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key):
+def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
     com_mode = combo_mode.get()
     com_car = combo_car.get()
     text_stime = tx_stime.get()
     text_etime = tx_etime.get()
     text_key = tx_key.get()
+    coms_2 = com_2.get()
 
     print("mode: " + com_mode)
     print("car: " + com_car)
     print("stime: " + text_stime)
     print("etime: " + text_etime)
     print("key: " + text_key)
+    print("com2:" + coms_2)
 
     return [com_mode, com_car, text_stime, text_etime, text_key]
 
@@ -64,7 +66,7 @@ def make_gui():
     combo_2["values"] = ("A2", "B2", "C2", "D2")
     combo_2.current(1)
 
-    button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key))
+    button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, combo_2))
 
     combo = ttk.Combobox(root, state='readonly')
 
