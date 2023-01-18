@@ -47,11 +47,11 @@ def make_gui():
     combo_car.current(1)
 
     tx_stime = StringVar(value=timeFromTo[0])
-    label_stime = ttk.Label(root, text="開始時刻")
+    label_stime = ttk.Label(root, text="Start Time")
     entry_stime = ttk.Entry(root, textvariable=tx_stime)
 
     tx_etime = StringVar(value=timeFromTo[1])
-    label_etime = ttk.Label(root, text="終了時刻")
+    label_etime = ttk.Label(root, text="End Time")
     entry_etime = ttk.Entry(root, textvariable=tx_etime)
 
     tx_key = StringVar()
