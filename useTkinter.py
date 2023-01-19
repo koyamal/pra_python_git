@@ -36,12 +36,12 @@ def make_gui():
     root = Tk()
     root.title("Use Tkinter")
 
-    label_mode = ttk.Label(root, text="モード選択")
+    label_mode = ttk.Label(root, text="Select mode")
     combo_mode = ttk.Combobox(root, state="readonly")
     combo_mode["values"] = ("A", "B", "C", "D", "E", "F")
     combo_mode.current(0)
 
-    label_car = ttk.Label(root, text="車両選択")
+    label_car = ttk.Label(root, text="Select Code")
     combo_car = ttk.Combobox(root, state='readonly')
     combo_car["values"] = ("AA", "BB", "CC", "DD", "EE", "FF")
     combo_car.current(1)
@@ -55,10 +55,10 @@ def make_gui():
     entry_etime = ttk.Entry(root, textvariable=tx_etime)
 
     tx_key = StringVar()
-    label_key = ttk.Label(root, text="API Key")
+    label_key = ttk.Label(root, text="Key Code")
     entry_key = ttk.Entry(root, textvariable=tx_key)
     tx_key2 = StringVar(value="02")
-    label_key2 = ttk.Label(root, text="API Key 02")
+    label_key2 = ttk.Label(root, text="Key Code 02")
     entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
     label_2 = ttk.Label(root, text="2")
