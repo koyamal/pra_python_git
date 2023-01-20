@@ -34,7 +34,7 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
 def make_gui():
     timeFromTo = set_today()
     root = Tk()
-    root.title("Use Tkinter")
+    root.title("First App by Tkinter")
 
     label_mode = ttk.Label(root, text="Select mode")
     combo_mode = ttk.Combobox(root, state="readonly")
@@ -58,12 +58,12 @@ def make_gui():
     label_key = ttk.Label(root, text="Key Code")
     entry_key = ttk.Entry(root, textvariable=tx_key)
     tx_key2 = StringVar(value="02")
-    label_key2 = ttk.Label(root, text="Key Code 02")
+    label_key2 = ttk.Label(root, text="Code 02")
     entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
     label_2 = ttk.Label(root, text="2")
     combo_2 = ttk.Combobox(root, state='readonly')
-    combo_2["values"] = ("A2", "B2", "C2", "D2")
+    combo_2["values"] = ("A2", "B2", "C2", "D2", "E2")
     combo_2.current(1)
 
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, combo_2))
