@@ -11,7 +11,9 @@ def set_today():
     timeTo = '{}-{}-{}T{}:{}:{}'.format(dt_now.year, dt_nowMonth[len(dt_nowMonth) - 2:],
                                         dt_nowDay[len(dt_nowDay) - 2:], "23", "59", "59")
 
-    return [timeFrom, timeTo]
+    output = "This is output"
+
+    return [timeFrom, timeTo, output]
 
 
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
