@@ -70,8 +70,8 @@ def make_gui():
 
     label_3 = ttk.Label(root, text="3")
     combo_3 = ttk.Combobox(root, state='readonly')
-    combo_3["values"] = ("A2A", "B2B", "C2C", "D2D", "E2E")
-    combo_3.current(1)
+    combo_3["values"] = ("A2AA", "B2BB", "C2CC", "D2DD", "E2EE")
+    combo_3.current(2)
 
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, combo_2))
 
