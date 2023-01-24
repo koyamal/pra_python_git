@@ -73,6 +73,8 @@ def make_gui():
     combo_3["values"] = ("A2AA", "B2BB", "C2CC", "D2DD", "E2EE")
     combo_3.current(2)
 
+    print("after instance making")
+
     button = ttk.Button(root, text="OK", command=lambda: get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, combo_2))
 
     combo = ttk.Combobox(root, state='readonly')
