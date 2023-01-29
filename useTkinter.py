@@ -67,7 +67,7 @@ def make_gui():
 
     label_2 = ttk.Label(root, text="2")
     combo_2 = ttk.Combobox(root, state='readonly')
-    combo_2["values"] = ("A2", "B2", "C2", "D2", "E2", "F2")
+    combo_2["values"] = ("A2", "B2", "C2", "D2", "E2", "F2", "G2", "H2")
     combo_2.current(1)
 
     label_3 = ttk.Label(root, text="3")
