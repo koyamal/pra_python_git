@@ -59,10 +59,10 @@ def make_gui():
     entry_etime = ttk.Entry(root, textvariable=tx_etime)
 
     tx_key = StringVar()
-    label_key = ttk.Label(root, text="Key Code")
+    label_key = ttk.Label(root, text="Key Code value")
     entry_key = ttk.Entry(root, textvariable=tx_key)
     tx_key2 = StringVar(value="02")
-    label_key2 = ttk.Label(root, text="Code 02")
+    label_key2 = ttk.Label(root, text="Code 02 value")
     entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
     label_2 = ttk.Label(root, text="2")
