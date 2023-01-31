@@ -15,7 +15,9 @@ def set_today():
 
     value = "test value"
 
-    return [timeFrom, timeTo, output, "test", value]
+    return_value = "this is return value"
+
+    return [timeFrom, timeTo, output, "test", value, return_value]
 
 
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
