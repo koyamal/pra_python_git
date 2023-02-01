@@ -34,13 +34,14 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
     print("etime: " + text_etime)
     print("key: " + text_key)
     print("com2:" + coms_2)
+    print("This is test code.")
 
     return [com_mode, com_car, text_stime, text_etime, text_key]
 
 def make_gui():
     timeFromTo = set_today()
     root = Tk()
-    root.title("First App by Tkinter")
+    root.title("1st App by tkinter")
 
     label_mode = ttk.Label(root, text="Select mode")
     combo_mode = ttk.Combobox(root, state="readonly")
