@@ -50,7 +50,7 @@ def make_gui():
 
     label_car = ttk.Label(root, text="Select Code")
     combo_car = ttk.Combobox(root, state='readonly')
-    combo_car["values"] = ("AA", "BB", "CC", "DD", "EE", "FF")
+    combo_car["values"] = ("AA", "BB", "CC", "DD", "EE", "FF", "GG")
     combo_car.current(1)
 
     tx_stime = StringVar(value=timeFromTo[0])
@@ -64,7 +64,7 @@ def make_gui():
     tx_key = StringVar()
     label_key = ttk.Label(root, text="Key Code value")
     entry_key = ttk.Entry(root, textvariable=tx_key)
-    tx_key2 = StringVar(value="02")
+    tx_key2 = StringVar(value="02 value")
     label_key2 = ttk.Label(root, text="Code 02 value")
     entry_key2 = ttk.Entry(root, textvariable=tx_key2)
 
