@@ -46,12 +46,12 @@ def make_gui():
     label_mode = ttk.Label(root, text="Select mode")
     combo_mode = ttk.Combobox(root, state="readonly")
     combo_mode["values"] = ("A", "B", "C", "D", "E", "F")
-    combo_mode.current(0)
+    combo_mode.current(2)
 
     label_car = ttk.Label(root, text="Select Code")
     combo_car = ttk.Combobox(root, state='readonly')
     combo_car["values"] = ("AA", "BB", "CC", "DD", "EE", "FF", "GG")
-    combo_car.current(1)
+    combo_car.current(4)
 
     tx_stime = StringVar(value=timeFromTo[0])
     label_stime = ttk.Label(root, text="Start Time")
@@ -100,8 +100,8 @@ def make_gui():
     entry_key.grid(row=4, column=1)
 
     button.grid(row=5, column=0)
-    label_key2.grid(row=6, column=0)
-    entry_key2.grid(row=6, column=1)
+    label_key2.grid(row=5, column=1)
+    entry_key2.grid(row=5, column=2)
     label_2.grid(row=7, column=0)
     combo_2.grid(row=7, column=1)
     label_3.grid(row=8, column=0)
