@@ -102,7 +102,7 @@ def make_gui():
     button.grid(row=5, column=0)
     label_key2.grid(row=5, column=1)
     entry_key2.grid(row=5, column=2)
-    label_2.grid(row=7, column=0)
+    label_2.grid(row=7, column=2)
     combo_2.grid(row=7, column=1)
     label_3.grid(row=8, column=0)
     combo_3.grid(row=8, column=1)
