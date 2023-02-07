@@ -84,7 +84,7 @@ def make_gui():
 
     combo = ttk.Combobox(root, state='readonly')
 
-    combo["values"] = ("A", "B", "C", "D")
+    combo["values"] = ("A", "B", "C", "D", "E", "F" , "G")
 
     combo.current(0)
 
