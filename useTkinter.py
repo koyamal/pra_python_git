@@ -19,7 +19,12 @@ def set_today():
 
     return [timeFrom, timeTo, output, "test", value, return_value]
 
-
+def coount(target, now):
+    if target <= now:
+        print("over target value")
+        return
+    now += 1
+    
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
     com_mode = combo_mode.get()
     com_car = combo_car.get()
