@@ -13,6 +13,8 @@ def set_today():
 
     output = "This is output value"
 
+    thi = "s value of proof"
+
     value = "test value"
 
     return_value = "this is return value"
@@ -24,7 +26,7 @@ def coount(target, now):
         print("over target value")
         return
     now += 1
-    
+
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
     com_mode = combo_mode.get()
     com_car = combo_car.get()
