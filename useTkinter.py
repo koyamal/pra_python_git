@@ -15,11 +15,11 @@ def set_today():
 
     thi = "s value of proof"
 
-    value = "test value"
+    value = "test value" + thi
 
     return_value = "this is return value"
 
-    return [timeFrom, timeTo, output, "test", value, return_value]
+    return [timeFrom, timeTo, output, "test", value, return_value, thi]
 
 def coount(target, now):
     if target <= now:
