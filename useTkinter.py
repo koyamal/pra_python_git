@@ -7,9 +7,9 @@ def set_today():
     dt_nowMonth = "0" + str(dt_now.month)
     dt_nowDay = "0" + str(dt_now.day)
     timeFrom = '{}-{}-{}T{}:{}:{}'.format(dt_now.year, dt_nowMonth[len(dt_nowMonth) - 2:],
-                                          dt_nowDay[len(dt_nowDay) - 2:], "00", "00", "00")
+                                          dt_nowDay[len(dt_nowDay) - 2:], "00", "01", "10")
     timeTo = '{}-{}-{}T{}:{}:{}'.format(dt_now.year, dt_nowMonth[len(dt_nowMonth) - 2:],
-                                        dt_nowDay[len(dt_nowDay) - 2:], "23", "59", "59")
+                                        dt_nowDay[len(dt_nowDay) - 2:], "22", "39", "19")
 
     output = "This is output value"
 
