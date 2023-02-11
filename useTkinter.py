@@ -53,7 +53,7 @@ def make_gui():
     label_mode = ttk.Label(root, text="Select mode")
     combo_mode = ttk.Combobox(root, state="readonly")
     combo_mode["values"] = ("A", "B", "C", "D", "E", "F")
-    combo_mode.current(2)
+    combo_mode.current(3)
 
     label_car = ttk.Label(root, text="Select Code")
     combo_car = ttk.Combobox(root, state='readonly')
