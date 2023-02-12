@@ -27,7 +27,7 @@ def coount(target, now):
         return
     now += 1
 
-def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
+def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue="this is test"):
     com_mode = combo_mode.get()
     com_car = combo_car.get()
     text_stime = tx_stime.get()
@@ -43,7 +43,7 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2):
     print("com2:" + coms_2)
     print("This is test code.")
 
-    return [com_mode, com_car, text_stime, text_etime, text_key]
+    return [com_mode, com_car, text_stime, text_etime, text_key, testvalue]
 
 def make_gui():
     timeFromTo = set_today()
