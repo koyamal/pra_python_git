@@ -26,6 +26,7 @@ def coount(target, now):
         print("over target value")
         return
     now += 1
+    return now
 
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue="this is test"):
     com_mode = combo_mode.get()
