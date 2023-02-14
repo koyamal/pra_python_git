@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import datetime
 
+
 def set_today():
     dt_now = datetime.datetime.now()
     dt_nowMonth = "0" + str(dt_now.month)
@@ -21,12 +22,14 @@ def set_today():
 
     return [timeFrom, timeTo, output, "test", value, return_value, thi]
 
+
 def coount(target, now):
     if target <= now:
         print("over target value")
         return
     now += 1
     return now
+
 
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue="this is test"):
     com_mode = combo_mode.get()
@@ -45,6 +48,7 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue
     print("This is test code.")
 
     return [com_mode, com_car, text_stime, text_etime, text_key, testvalue]
+
 
 def make_gui():
     timeFromTo = set_today()
