@@ -36,11 +36,11 @@ def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue
     text_key = tx_key.get()
     coms_2 = com_2.get()
 
-    print("mode: " + com_mode)
-    print("car: " + com_car)
-    print("stime: " + text_stime)
-    print("etime: " + text_etime)
-    print("key: " + text_key)
+    print("mode:" + com_mode)
+    print("car:" + com_car)
+    print("stime:" + text_stime)
+    print("etime:" + text_etime)
+    print("key:" + text_key)
     print("com2:" + coms_2)
     print("This is test code.")
 
