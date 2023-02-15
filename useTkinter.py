@@ -16,9 +16,9 @@ def set_today():
 
     thi = "s value of proof"
 
-    value = "test value" + thi
+    value = "test value" + thi + thi * 2
 
-    return_value = "this is return value"
+    return_value = "this is return value from set_today func"
 
     return [timeFrom, timeTo, output, "test", value, return_value, thi]
 
