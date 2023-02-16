@@ -31,6 +31,10 @@ def coount(target, now):
     return now
 
 
+def counter(val):
+    return val + 1
+
+
 def get_conf(combo_mode, combo_car, tx_stime, tx_etime, tx_key, com_2, testvalue="this is test"):
     com_mode = combo_mode.get()
     com_car = combo_car.get()
