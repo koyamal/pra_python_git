@@ -31,7 +31,7 @@ def coount(target, now):
     return now
 
 
-def counter(val):
+def add_one(val):
     return val + 1
 
 
