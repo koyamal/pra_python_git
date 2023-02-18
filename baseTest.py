@@ -1,4 +1,8 @@
 import base64
+
+def print_code():
+    print("this is print function")
+
 print("Start!")
 with open("test.jpg", "rb") as f:
     img = f.read()
