@@ -4,8 +4,8 @@ const clientSecret =  process.env.CLIENT_SECRET;
 
 notify();
 async function notify() {
-    console.log(clientId);
-    console.log(clientSecret);
+    console.log("clientId: ", clientId);
+    console.log("clientSecret: ", clientSecret);
     const token = await getToken(clientId, clientSecret);
     await sendEvent(token);
 }
