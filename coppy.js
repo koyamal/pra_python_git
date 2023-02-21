@@ -55,25 +55,25 @@ function trashCollectionAlertEvent() {
         'referenceId': 'id-'+ new Date().getTime(),
         'expiryTime': expiryTime.toISOString(),
         'event': {
-            'name': 'AMAZON.TrashCollectionAlert.Activated',
+            'name': 'AMAZON.MessageAlert.Activated',
             'payload': {
-                'alert': {
-                    'garbageTypes': [
-                        'PET_BOTTLES',
-                        'RECYCLABLE_PLASTICS',
-                        'WASTE_PAPER',
-                        'COMPOSTABLE',
-                    ],
-                    'collectionDayOfWeek': 'TUESDAY'
-                }
+               'state': {
+                  'status': 'UNREAD',
+                  'freshness': 'NEW'
+               },
+               'messageGroup': {
+                  'creator': {
+                      'name': 'OKOME NOKORI GA ZERO DESU'
+                  },
+               'count': 0,
+               }
             }
-        },
-        'localizedAttributes': [
-            {
-                'locale': 'ja-JP',
-                'sellerName': 'TrashCollection'
-            }
-        ],
+         },
+         'localizedAttributes': [
+             {
+                 'locale': 'ja-JP',
+             }
+         ],
         'relevantAudience': {
             'type': 'Multicast',
             'payload': {}
