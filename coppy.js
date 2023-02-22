@@ -63,7 +63,7 @@ function trashCollectionAlertEvent() {
                },
                'messageGroup': {
                   'creator': {
-                      'name': 'OKOME NOKORI GA ZERO DESU'
+                      'name': 'OKOME NOKORI GA ZERO DESU NODE TAITE KUDASAI'
                   },
                'count': 0,
                }
