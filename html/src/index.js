@@ -38,3 +38,7 @@ const squareC = (a) => {
 }
 
 squareC(13);
+
+console.log(1 > 2);
+console.log(1 < 2);
+console.log(1 === 2);
