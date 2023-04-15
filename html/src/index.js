@@ -42,3 +42,13 @@ squareC(13);
 console.log(1 > 2);
 console.log(1 < 2);
 console.log(1 === 2);
+
+const flagIf = true
+if(flagIf){
+    console.log("Correct");
+} else {
+    console.log("InCorrect");
+}
+
+const greeting = flagIf? "Good Morning": "Hello";
+console.log(greeting);
