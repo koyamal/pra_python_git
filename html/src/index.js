@@ -52,3 +52,16 @@ if(flagIf){
 
 const greeting = flagIf? "Good Morning": "Hello";
 console.log(greeting);
+
+const numbers = [1, 2, 3, 4];
+
+const number10 = numbers.map((number, index) => {
+    console.log(`index: ${index}`);
+    return number * 100;
+})
+
+console.log(number10);
+
+numbers.forEach((num) => {
+    console.log(num);
+});
