@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1"/>
+    </head>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            /* background-color: aqua; */
+            height: 100%;
+            width: 100%;
+        }
+        .header {
+            background-color: #FF9900;
+            height: 104px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+        }
+        .header-title {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px;
+            color: #0038FF;
+            font-weight: normal;
+            text-align: center;
+        }
+        .header-right {
+            position: absolute;
+            right: 19px;
+            bottom: 8px;
+            font-size: 12px;
+            line-height: 24px;
+            border: none;
+            background-color: transparent;
+            color: rgb(0, 56, 255, 0.7);
+        }
+        .memo-list-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 19px;
+            padding-right: 19px;
+            border-bottom: 1px solid rgba(0,0,0, 0.15);
+        }
+        .memo-list-item-title {
+            font-size: 16px;
+            line-height: 32px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .memo-list-item-date {
+            font-size: 12px;
+            line-height: 16px;
+            color: #848484
+        }
+        .memo-list-item-delete {
+            border: none;
+            background-color: transparent;
+            color: #898989;
+            font-size: 20px;
+        }
+        .circleButton {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            background-color: #FF9900;
+            border: none;
+            border-radius: 32px;
+            color: #0038FF;
+            font-size: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.40);
+        }
+        .scroll {
+            height: calc(100% - 104px);
+            overflow-y: scroll;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div>
+                    <h1 class="header-title">Memo App</h1>
+                    <button class="header-right">ログアウト</button>
+                </div>
+            </div>
+
+            <!-- Scroll -->
+            <div class="scroll">
+                <!-- MemoList -->
+                <div>
+                    <!-- MemoListItems -->
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">買い物リスト</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">やることリスト</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">アイディア</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">1月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">2月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">3月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">4月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">5月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">6月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">7月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                    <div class="memo-list-item">
+                        <div>
+                            <h3 class="memo-list-item-title">8月の予定</h3>
+                            <time class="memo-list-item-date">2023/04/15 09:49</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-delete">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Button -->
+            <button class="circleButton">
+                +
+            </button>
+        </div>
+    </body>
+</html>
