@@ -125,3 +125,9 @@ const japanPersons = persons.filter((person) => {
 })
 
 console.log(japanPersons);
+
+const over30 = persons.filter((person) => {
+    return person.age > 30;
+})
+
+console.log(over30);
