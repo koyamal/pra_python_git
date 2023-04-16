@@ -33,3 +33,7 @@ const onClickColor = () => {
     }
     colorSwitch ++;
 }
+
+const onClickLogout = () => {
+    console.log("Logout Done.");
+}
