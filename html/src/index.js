@@ -65,3 +65,9 @@ console.log(number10);
 numbers.forEach((num) => {
     console.log(num);
 });
+
+const obj16 = {name: "Jhone", age: 38, contory: "USA"};
+
+const { name, contory} = obj16;
+
+console.log(`${name} is from ${contory}.`);
