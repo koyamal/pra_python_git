@@ -1,0 +1,14 @@
+.flexcontainer {
+    background-color: aqua;
+    display: flex;
+}
+
+.flexitem {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: brown;
+}
+
+.longitem {
+    height: 100px;
+}
