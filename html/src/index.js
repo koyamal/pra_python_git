@@ -104,3 +104,24 @@ const array16_even_first = array16.find((dat) => {
 
 console.log(array16_even_first);
 
+
+const persons = [
+    {name: "Jhone", age: 38, contory: "USA"},
+    {name: "Taro", age: 40, contory: "Japan"},
+    {name: "Jiro", age: 32, contory: "Japan"},
+    {name: "Tom", age: 12, contory: "USA"},
+    {name: "Kim", age: 22, contory: "KOREA"},
+    {name: "Li", age: 43, contory: "CHINA"},
+]
+
+const usaPersons = persons.filter((person) => {
+    return person.contory === "USA";
+})
+
+console.log(usaPersons);
+
+const japanPersons = persons.filter((person) => {
+    return person.contory === "Japan";
+})
+
+console.log(japanPersons);
