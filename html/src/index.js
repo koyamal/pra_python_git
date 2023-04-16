@@ -71,3 +71,33 @@ const obj16 = {name: "Jhone", age: 38, contory: "USA"};
 const { name, contory} = obj16;
 
 console.log(`${name} is from ${contory}.`);
+
+const array16 = [1, 2, 3, 3, 5, 5, 6, 7];
+
+const array16_ = [...array16];
+array16_.push(14);
+
+console.log(array16);
+console.log(array16_);
+
+array16.forEach((dat) => {
+    console.log(dat);
+})
+
+const array16_10 = array16.map((dat) => {
+    return dat * 10;
+})
+console.log(array16_10);
+
+const array16_even = array16.filter((dat) => {
+    return dat % 2 === 0;
+})
+
+console.log(array16_even);
+
+const array16_even_first = array16.find((dat) => {
+    return dat % 2 === 0;
+})
+
+console.log(array16_even_first);
+
