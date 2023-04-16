@@ -80,9 +80,12 @@ array16_.push(14);
 console.log(array16);
 console.log(array16_);
 
-array16.forEach((dat) => {
+const outputForEach = array16.forEach((dat) => {
     console.log(dat);
+    return dat;
 })
+
+console.log("outputForEach", outputForEach);
 
 const array16_10 = array16.map((dat) => {
     return dat * 10;
