@@ -1,6 +1,8 @@
 .flexcontainer {
     background-color: aqua;
     display: flex;
+    flex-direction: column-reverse;
+    /* flex-direction: row-reverse; */
 }
 
 .flexitem {
@@ -9,6 +11,7 @@
     background-color: brown;
 }
 
-.longitem {
+.bigitem {
     height: 100px;
+    width: 100px;
 }
