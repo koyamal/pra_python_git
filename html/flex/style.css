@@ -1,14 +1,16 @@
 .flexcontainer {
     background-color: aqua;
     display: flex;
-    flex-direction: column-reverse;
-    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flexitem {
     padding: 10px 10px;
     margin: 10px 10px;
     background-color: brown;
+    width: 250px;
 }
 
 .bigitem {
