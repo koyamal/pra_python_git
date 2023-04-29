@@ -3,6 +3,9 @@ import codecs
 print("start")
 
 with open('/Users/koki/Downloads/dump.out.log3') as f:
+    a = [1, 2, 3, 4, 5, 6, 7]
+    for data in a:
+        print(data)
     for line in f:
         for i in range(int(len(line) / 2)):
             try:
@@ -17,7 +20,7 @@ with open('/Users/koki/Downloads/dump.out.log3') as f:
                     a = [7, 8]
                     a2 = [7, 8]
                     for tm in a2:
-                        print(tm)
+                        print(tm, "testCode--001")
                     for tm in t2:
                         print(tm)
                     for tm in t:
